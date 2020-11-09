@@ -91,7 +91,7 @@ signInButton.addEventListener('click', () => {
       'usuario': username,
     }
     console.log(objeto)
-    fetch('http://localhost:3000/buscarc', {
+    fetch('http://0.0.0.0:5000/buscarc', {
     method: 'POST',
     body: JSON.stringify(objeto),
     headers:{
@@ -148,7 +148,7 @@ signInButton.addEventListener('click', () => {
       'password': password
     }
     console.log(objeto)
-    fetch('http://localhost:3000/registrar', {
+    fetch('http://0.0.0.0:5000/registrar', {
     method: 'POST',
     body: JSON.stringify(objeto),
     headers:{
@@ -185,7 +185,7 @@ signInButton.addEventListener('click', () => {
 	}
 	console.log(objeto)
 	
-	fetch('http://localhost:3000/login', {
+	fetch('http://0.0.0.0:5000/login', {
 	method: 'POST', // or 'PUT'
 	body: JSON.stringify(objeto), // data can be `string` or {object}!
 	headers:{
