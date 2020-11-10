@@ -91,7 +91,7 @@ signInButton.addEventListener('click', () => {
       'usuario': username,
     }
     console.log(objeto)
-    fetch('http://0.0.0.0:5000/buscarc', {
+    fetch('https://proyecto2-ipc1.herokuapp.com/buscarc', {
     method: 'POST',
     body: JSON.stringify(objeto),
     headers:{
@@ -148,7 +148,7 @@ signInButton.addEventListener('click', () => {
       'password': password
     }
     console.log(objeto)
-    fetch('http://0.0.0.0:5000/registrar', {
+    fetch('https://proyecto2-ipc1.herokuapp.com/registrar', {
     method: 'POST',
     body: JSON.stringify(objeto),
     headers:{
@@ -185,7 +185,7 @@ signInButton.addEventListener('click', () => {
 	}
 	console.log(objeto)
 	
-	fetch('http://0.0.0.0:5000/login', {
+	fetch('https://proyecto2-ipc1.herokuapp.com/login', {
 	method: 'POST', // or 'PUT'
 	body: JSON.stringify(objeto), // data can be `string` or {object}!
 	headers:{

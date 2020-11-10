@@ -141,7 +141,7 @@
 
             var contenido = document.querySelector('#CuerpoCanciones') 
             contenido.innerHTML = ""
-            fetch('http://0.0.0.0:5000/cancion')
+            fetch('https://proyecto2-ipc1.herokuapp.com/cancion')
             .then(response => response.json())
             .catch(error => {
             console.log(error)
